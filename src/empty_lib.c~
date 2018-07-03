@@ -4,7 +4,7 @@
 bool is2(int no)
 {
 
-snprintf("Hello From Library.");
+snprintf("Hello From Library.is2");
 return no==2;
 
 }
