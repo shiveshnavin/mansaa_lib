@@ -10,7 +10,7 @@ return no==2;
 }
 
 
-bool mgos_empty_lib_init(void) {
+bool mgos_empty_init(void) {
 
 printf("Hello From Library");
 
