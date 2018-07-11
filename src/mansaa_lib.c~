@@ -11,7 +11,11 @@ return no==2;
 
 void setprev()
 {
-int ri,gi,bi,wi,count;
+
+
+
+  LOG(LL_INFO, ("%s", "Setting Previous Color !"));
+		int ri,gi,bi,wi,count;
 				char *content = json_fread("userData.json");
 				LOG(LL_INFO, ("%s", content));
 				json_scanf(content, strlen(content), "{count: %d, led_r: %d , led_g: %d , led_b:%d , led_w:%d}", &count,  &ri,&gi,&bi,&wi  );
@@ -61,6 +65,8 @@ printf("Hello From Library");
 	mgos_gpio_set_mode(16, MGOS_GPIO_MODE_OUTPUT);
 	mgos_gpio_set_mode(5, MGOS_GPIO_MODE_OUTPUT);
 	mgos_gpio_set_mode(19, MGOS_GPIO_MODE_OUTPUT);
+
+  LOG(LL_INFO, ("%s", "Setting Previous Color : Calling setPrev() "));
 setprev();
 
 /*
