@@ -28,7 +28,7 @@ printf("Hello From Library");
 			//mgos_pwm_set(5,200,0.1);
 			//mgos_pwm_set(19,200,0.1);
 
-				int ri,gi,bi,wi;
+				int ri,gi,bi,wi,count;
 				char *content = json_fread("userData.json");
 				LOG(LL_INFO, ("%s", content));
 				json_scanf(content, strlen(content), "{count: %d, led_r: %d , led_g: %d , led_b:%d , led_w:%d}", &count,  &ri,&gi,&bi,&wi  );
