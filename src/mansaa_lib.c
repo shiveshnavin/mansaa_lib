@@ -11,7 +11,7 @@ return no==2;
 
 void setprev()
 {
-int ri,gi,bi,wi,count;
+		int ri,gi,bi,wi,count;
 				char *content = json_fread("userData.json");
 				LOG(LL_INFO, ("%s", content));
 				json_scanf(content, strlen(content), "{count: %d, led_r: %d , led_g: %d , led_b:%d , led_w:%d}", &count,  &ri,&gi,&bi,&wi  );
