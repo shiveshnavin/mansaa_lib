@@ -63,10 +63,10 @@ printf("Hello From Library");
 	mgos_gpio_set_mode(19, MGOS_GPIO_MODE_OUTPUT);
 
 
-			mgos_pwm_set(4,200,0.1);
-			//mgos_pwm_set(16,200,0.1);
-			//mgos_pwm_set(5,200,0.1);
-			//mgos_pwm_set(19,200,0.1);
+			mgos_pwm_set(4,200,((double)mgos_sys_config_get_color_r())/255);
+			mgos_pwm_set(16,200,((double)mgos_sys_config_get_color_g())/255);
+			mgos_pwm_set(5,200,((double)mgos_sys_config_get_color_b())/255);
+			mgos_pwm_set(19,200,((double)mgos_sys_config_get_color_w())/255);
 
 				
 
