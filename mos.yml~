@@ -8,6 +8,11 @@ sources:
 filesystem:
   - fs
 config_schema:
+- ["color", o,{title: "Color"}]
+- ["color.r", "i",100,{title: "Color"}]
+- ["color.g", "i",0,{title: "Color"}]
+- ["color.b", "i",0,{title: "Color"}]
+- ["color.w", "i",0,{title: "Color"}]
 libs:
   - origin: https://github.com/mongoose-os-libs/pwm 
 
